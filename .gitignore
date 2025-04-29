@@ -1,0 +1,9 @@
+/.archive/
+/.reports/
+/.run/*
+!/.run/history
+/.run/history/*
+!/.run/history/.gitkeep
+/.vendor/*
+!/.vendor/.gitkeep
+/Public/
