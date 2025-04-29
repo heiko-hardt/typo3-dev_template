@@ -7,3 +7,4 @@
 /.vendor/*
 !/.vendor/.gitkeep
 /Public/
+/composer.lock
