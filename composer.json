@@ -53,6 +53,7 @@
 	"scripts": {
 		"qa": [
 			"mkdir -p .reports/checkstyle",
+			"mkdir -p Public",
 			"@qa:static-code-analysis",
 			"@qa:tests"
 		],
