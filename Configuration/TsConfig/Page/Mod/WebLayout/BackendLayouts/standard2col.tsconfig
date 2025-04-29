@@ -1,0 +1,29 @@
+#
+# BACKENDLAYOUT: DEFAULT
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            standard2col {
+                title = LLL:EXT:dev_template/Resources/Private/Language/locallang_be.xlf:backend_layout.standard2col
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:dev_template/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                icon = EXT:dev_template/Resources/Public/Images/BackendLayouts/20_standard-2col.gif
+            }
+        }
+    }
+}

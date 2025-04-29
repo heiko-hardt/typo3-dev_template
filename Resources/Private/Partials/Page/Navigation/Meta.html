@@ -1,0 +1,11 @@
+<f:if condition="{navigation}">
+    <ul>
+        <f:for each="{navigation}" as="item">
+            <li>
+                <a href="{item.link}" target="{item.target}" title="{item.title}">
+                    {item.title}
+                </a>
+            </li>
+        </f:for>
+    </ul>
+</f:if>
