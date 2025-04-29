@@ -1,0 +1,25 @@
+<f:layout name="Default"/>
+
+<f:section name="Main">
+
+    <div id="navigationBreadcrumb">
+        <f:render partial="Navigation/Breadcrumb" arguments="{navigation:navigationBreadcrumb}" />
+    </div>
+
+    <div id="mainContent" class="two-column">
+
+        <div id="content-col-left">
+            <div id="navigationPrimaer">
+                <f:render partial="Navigation/Primary" arguments="{navigation:navigationPrimary}" />
+            </div>
+        </div>
+
+        <div id="content-col-mid-border"></div>
+
+        <div id="content-col-mid">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+        </div>
+
+    </div>
+
+</f:section>

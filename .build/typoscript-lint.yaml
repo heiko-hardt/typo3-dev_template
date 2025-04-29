@@ -1,0 +1,24 @@
+#
+# https://github.com/martin-helmich/typo3-typoscript-lint
+#
+paths:
+  # - Configuration/TsConfig/
+  - Configuration/TypoScript/
+
+filePatterns:
+  - "*.ts"
+  - "*.tsconfig"
+  - "*.typoscript"
+  - "setup.txt"
+  - "constants.txt"
+
+sniffs:
+  - class: Indentation
+    parameters:
+      useSpaces: true
+      indentConditions: true
+      indentPerLevel: 2
+  - class: RepeatingRValue
+    disabled: true
+  - class: DeadCode
+    disabled: false

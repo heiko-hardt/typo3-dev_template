@@ -1,0 +1,32 @@
+/* $Id: footer.css 651 2012-04-04 22:20:58Z heiko.hardt $ */
+
+@charset "utf-8";
+
+div#siteFooter p.copyright {
+    position:           absolute;
+    font-size:          0.875em;                           /* zur basis 16: font-size:14px;  */
+    color:              #666666;
+    top:                1.28571em;                         /* zur basis 14: top:18px  */
+    left:               0;
+    width:              45.71429em;                        /* zur basis 14: width:640px  */
+    padding:            0 0 0.28571em 0;                   /* zur basis 14: padding:0 0 4px 0; */
+}
+
+div#siteFooter p.navToTop a,
+div#siteFooter p.navToTop a:link,
+div#siteFooter p.navToTop a:visited {
+    position:           absolute;
+    font-size:          0.875em;                           /* zur basis 16: font-size:14px;  */
+    color:              #666666;
+    top:                1.28571em;                         /* zur basis 14: top:18px  */
+    right:              0;
+    padding:            0 1.14286em 0.28571em 0;           /* zur basis 14: padding:0 16px 4px 0; */
+    background:         url(../Images/icon_link_top.gif) top right no-repeat;
+}
+
+div#siteFooter p.navToTop a:hover,
+div#siteFooter p.navToTop a:focus,
+div#siteFooter p.navToTop a:active {
+    color:              #004f80;
+    text-decoration:    underline;
+}

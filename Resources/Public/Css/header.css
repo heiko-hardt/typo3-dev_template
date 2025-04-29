@@ -1,0 +1,77 @@
+/* $Id: header.css 651 2012-04-04 22:20:58Z heiko.hardt $ */
+
+@charset "utf-8";
+
+/* Header Suchformular #################################################################################################
+   ################################################################################################################## */
+div#siteHeader #logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+div#siteHeader #logo a {
+    display: block;
+}
+
+div#siteHeader p#headerTitle {
+	position: absolute;
+	top: 58px;
+	left: 330px;
+
+	color: #004F80;
+	font-size: 24px;
+}
+
+div#siteHeader form {
+    display:            inline;
+    position:           absolute;
+    top:                63px;
+    right:              0px;
+    margin:             0;
+    padding:            0 12px 0 0;
+    width:              320px;
+    text-align:         right;
+}
+
+div#siteHeader form label {
+    font-size:          18px;
+    padding:            0 7px 4px 0;
+    vertical-align:     middle;
+    display:            inline-block;
+}
+
+div#siteHeader form label a,
+div#siteHeader form label a:link,
+div#siteHeader form label a:visited {
+    color:              #444444;
+    text-decoration:    none;
+}
+
+div#siteHeader form label a:hover,
+div#siteHeader form label a:focus,
+div#siteHeader form label a:active {
+    color:              #004f80;
+    text-decoration:    none;
+}
+
+div#siteHeader form .search-input input {
+    color:              #666666;
+    font-size:          14px;
+    padding:            1px 5px 2px 5px;
+    margin:             0 7px 0 0;
+    width:              201px;
+    border:             1px solid #999999;
+    vertical-align:     middle;
+}
+
+div#siteHeader form input:focus {
+    outline:            #004f80 solid 1px;
+}
+
+div#siteHeader form .search-button button {
+    padding:            0;
+    vertical-align:     middle;
+    border:             none;
+    background:         transparent;
+}

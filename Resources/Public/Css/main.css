@@ -1,0 +1,166 @@
+/* $Id: main.css 651 2012-02-22 11:40:58Z heiko.hardt $ */
+
+@charset "utf-8";
+
+
+/* GLOBAL ##############################################################################################################
+##################################################################################################################### */
+html {
+    overflow-y:         scroll;
+}
+
+body {
+    font-family:        Calibri, Arial, Verdana, sans-serif;
+    color:              #444444;
+    background:         #eeeeee;
+    text-align:         center;
+    padding:            10px 0 0 0;
+}
+
+
+/* LAYOUT MAIN CONTAINER ###############################################################################################
+##################################################################################################################### */
+div#siteBackgrounds {
+    position:           relative;
+    width:              980px;
+    margin:             0 auto;
+    padding:            0;
+    background:         url(../Images/footer_background.jpg) bottom right no-repeat;
+}
+
+div#siteContainer {
+    position:               relative;
+    width:                  980px;
+    text-align:             left;
+    background-color:       #FFF;
+    box-shadow:             0 0 5px 5px #d8d8d8;
+    -moz-box-shadow:        0 0 5px 5px #d8d8d8;
+    -webkit-box-shadow:     0 0 5px 5px #d8d8d8;
+    -webkit-border-radius:  4px 4px 0 0;
+    -moz-border-radius:     4px 4px 0 0;
+    border-radius:          4px 4px 0 0;
+}
+
+div#siteMeta {
+    position:           absolute;
+    top:                0;
+    right:              0;
+}
+
+div#siteHeader {
+    overflow:               hidden;
+    width:                  980px;
+    height:                 100px;
+    background:             #ffffff url(../Images/header_background.jpg) bottom right no-repeat;
+    vertical-align:         middle;
+    -webkit-border-radius:  4px 4px 0 0;
+    -moz-border-radius:     4px 4px 0 0;
+    border-radius:          4px 4px 0 0;
+}
+
+div#mainContent {
+    background:         #ffffff;
+    min-height:         400px;
+    overflow:           hidden;
+}
+
+div#siteFooter {
+    position:           relative;
+    width:              980px;
+    height:             138px;
+    text-align:         left;
+}
+
+
+/* MAIN CONTENT Elements 2 column ######################################################################################
+##################################################################################################################### */
+.two-column #content-col-left {
+    width:              15em;                              /* basis 16: width:240px; */
+    padding:            0 0 5.9375em 0;                    /* basis 16: width:95px; */
+    overflow:           hidden;
+    float:              left;
+}
+
+.two-column #content-col-mid-border {
+    float:              left;
+    width:              45em;                              /* basis 16: width:720px;  */
+    height:             0.25em;                            /* basis 16: height:4px;  */
+    margin-right:       1.25em;                            /* basis 16: margin-right:20px; */
+    background-color:   #004f80;
+    overflow:           hidden;
+}
+
+.two-column #content-col-mid {
+    width:              46.25em;                           /* basis 16: width:740px;  */
+    padding:            0.875em 0 5.9375em 0;              /* basis 16: padding: 14px 0 95px 0; */
+    overflow:           hidden;
+    float:              left;
+}
+
+
+/* MAIN CONTENT Elements 3 column ######################################################################################
+##################################################################################################################### */
+.three-column #content-col-left {
+    width:              15em;                              /* basis 16: width:240px; */
+    padding:            0 0 5.9375em 0;                    /* basis 16: width:95px; */
+    overflow:           hidden;
+    float:              left;
+}
+
+.three-column #content-col-mid-border {
+    float:              left;
+    width:              31.25em;                           /* basis 16: width:500px;  */
+    height:             0.25em;                            /* basis 16: height:4px;  */
+    margin-right:       1.25em;                            /* basis 16: margin-right:20px; */
+    background-color:   #004f80;
+    overflow:           hidden;
+}
+
+.three-column #content-col-mid {
+    width:              32.5em;                            /* basis 16: width:520px;  */
+    padding:            0.875em 0 5.9375em 0;              /* basis 16: padding: 14px 0 95px 0; */
+    overflow:           hidden;
+    float:              left;
+}
+
+.three-column #content-col-right-border {
+    float:              left;
+    width:              12.5em;                            /* basis 16: width:500px;  */
+    height:             0.25em;                            /* basis 16: height:4px;  */
+    background-color:   #004f80;
+    overflow:           hidden;
+}
+
+.three-column #content-col-right {
+    width:              13.75em;                           /* basis 16: width:220px; */
+    padding:            0.875em 0 5.9375em 0;              /* basis 16: padding: 14px 0 95px 0; */
+    overflow:           hidden;
+    float:              left;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hidden {
+    display:           none;
+}
+
+.hidden {
+    display:           none;
+}
+
+
+
+
+
+
+
+
+

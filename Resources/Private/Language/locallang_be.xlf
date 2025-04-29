@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2018-05-12UTC15:21:240">
+        <header>
+            <authorName>Heiko Hardt</authorName>
+            <authorEmail>Heiko@Hardt.dev</authorEmail>
+        </header>
+        <body>
+
+            <trans-unit id="backend_layout.homepage">
+                <source>Startseite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.standard2col">
+                <source>Content (Nav|Content)</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.standard3col">
+                <source>Content (Nav|Content|Marginal)</source>
+            </trans-unit>
+
+            <trans-unit id="backend_layout.column.normal">
+                <source>Main</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.border">
+                <source>Marginal</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

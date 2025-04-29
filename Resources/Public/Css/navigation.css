@@ -1,0 +1,198 @@
+/* $Id: navigation.css 651 2012-04-04 22:20:58Z heiko.hardt $ */
+
+@charset "utf-8";
+
+/* GLOBAL ELEMENTS #####################################################################################################
+   ################################################################################################################## */
+span.aural {
+    position:           absolute;
+    left:               -1000px;
+    top:                -1000px;
+    width:              0;
+    height:             0;
+    overflow:           hidden;
+    display:            inline;
+}
+
+/* Header Metanavigation ###############################################################################################
+################################################################################################################## */
+#navigationMeta {
+    float:              right;
+    padding:            0 0.85714em 0 0;              /* zur basis 14: padding:0 12px 0 0; */
+}
+
+#navigationMeta ul {
+    float:              left;
+}
+
+#navigationMeta li {
+    float:              left;
+    padding-bottom:     0.14286em;                    /* zur basis 14: padding-bottom:2px; */
+}
+
+#navigationMeta li strong,
+#navigationMeta li a,
+#navigationMeta li a:link,
+#navigationMeta li a:visited {
+    display:            block;
+    color:              #666666;
+    padding:            0 0.85714em 0 0.85714em;      /* zur basis 14: padding:0 12px 0 12px; */
+    border-right:       1px solid #cccccc;
+    text-decoration:    none;
+}
+
+#navigationMeta li a:hover,
+#navigationMeta li a:focus,
+#navigationMeta li a:active {
+    color:              #004f80;
+    text-decoration:    none;
+}
+
+#navigationMeta li strong {
+    font-weight:        bold;
+}
+
+
+/* BREADCRUMB ##########################################################################################################
+################################################################################################################## */
+#navigationBreadcrumb {
+    overflow:           hidden;
+    width:              45em;                                   /* zur basis 16: width: 720px; */
+    padding:            1em 1.25em 0.5625em 15em;               /* zur basis 16: padding: 16px 0 9px 240px; */
+    background:         #ffffff;
+}
+
+#navigationBreadcrumb ul {
+    float:              left;
+    padding:            0.18em 0 0 0;
+    width:              36.9375em;
+}
+
+#navigationBreadcrumb li {
+    float:              left;
+}
+
+#navigationBreadcrumb li + li {
+    padding:            0 0 0 1.75em;                      /* zur basis 14: padding: 0 0 3px 28px; */
+    background:         url(../Images/navigation_breadcrumb_arrow_right.gif) left top no-repeat;
+}
+
+#navigationBreadcrumb li strong,
+#navigationBreadcrumb li a {
+    display:            block;
+    font-size:          0.875em;                           /* zur basis 16: font-size:14px; */
+    color:              #666666;
+    text-decoration:    none;
+    padding-bottom:     0.1875em;                          /* zur basis 14: padding-bottom:3px; */
+}
+
+#navigationBreadcrumb li strong {
+    color:              #004f80;
+    font-weight:        normal;
+}
+
+#navigationBreadcrumb li a:hover,
+#navigationBreadcrumb li a:focus,
+#navigationBreadcrumb li a:active {
+    color:              #004f80;
+    text-decoration:    underline;
+}
+
+
+
+/* PRIMAERE NAVIGATION #################################################################################################
+################################################################################################################## */
+#navigationPrimaer li a,
+#navigationPrimaer li a:link,
+#navigationPrimaer li a:visited {
+    color:              #444444;
+    text-decoration:    none;
+}
+
+#navigationPrimaer li a:hover,
+#navigationPrimaer li a:focus,
+#navigationPrimaer li a:active {
+    color:              #004f80;
+    text-decoration:    underline;
+}
+
+#navigationPrimaer li li a,
+#navigationPrimaer li li a:link,
+#navigationPrimaer li li a:visited {
+    color:              #666666;
+    text-decoration:    none;
+}
+
+#navigationPrimaer li li a:hover,
+#navigationPrimaer li li a:focus,
+#navigationPrimaer li li a:active {
+    color:              #004f80;
+    text-decoration:    underline;
+}
+
+#navigationPrimaer li em a,
+#navigationPrimaer li em a:link,
+#navigationPrimaer li em a:visited {
+    font-weight:        bold;
+    font-style:         normal;
+    color:              #004f80;
+    text-decoration:    none;
+}
+
+#navigationPrimaer li em a:hover,
+#navigationPrimaer li em a:focus,
+#navigationPrimaer li em a:active {
+    text-decoration:    underline;
+}
+
+#navigationPrimaer {
+    width:              13.75em;                           /* zur basis 16: width: 220px; */
+    overflow:           hidden;
+}
+
+#navigationPrimaer > ul {
+    width:              13.75em;                           /* zur basis 16: width: 220px; */
+    overflow:           hidden;
+    background:         url(../Images/navigation_primary_spacer_dotted.gif) left bottom no-repeat;
+}
+
+#navigationPrimaer li {
+    background:         url(../Images/navigation_primary_spacer_dotted.gif) 0 0 no-repeat;
+    display:            block;
+    overflow:           hidden;
+}
+
+html #navigationPrimaer li li {
+    background:         none;
+}
+
+#navigationPrimaer li a {
+    font-size:          0.875em;                           /* zur basis 16: font-size:14px; */
+    display:            block;
+    font-weight:        normal;
+    border-left:        0.28571em solid #ffffff;           /* zur basis 14: border-left:4px; */
+}
+
+#navigationPrimaer li strong {
+    font-weight:        bold;
+    font-size:          0.875em;                           /* zur basis 16: font-size:14px; */
+    display:            block;
+    border-left:        0.28571em solid #004f80;           /* zur basis 14: border-left:4px; */
+    color:              #004f80;
+}
+
+#navigationPrimaer li a,
+#navigationPrimaer li strong {
+    padding:            0.142857em 0 0.142857em 1.14286em; /* zur basis 14: padding: 2px 0 2px 16px; */
+    margin:             0.42857em 0 0.42857em 0;           /* zur basis 14: margin: 6px 0 6px 0; */
+}
+
+#navigationPrimaer li li a,
+#navigationPrimaer li li strong {
+    padding-left:       1.85714em;                         /* zur basis 14: padding-left: 26px; */
+}
+
+#navigationPrimaer li li li a,
+#navigationPrimaer li li li strong {
+    padding-left:       2.71429em;                         /* zur basis 14: padding-left: 38px; */
+}
