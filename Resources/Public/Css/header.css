@@ -1,26 +1,23 @@
-/* $Id: header.css 651 2012-04-04 22:20:58Z heiko.hardt $ */
-
 @charset "utf-8";
 
 /* Header Suchformular #################################################################################################
    ################################################################################################################## */
 div#siteHeader #logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    position:           absolute;
+    top:                10px;
+    left:               10px;
 }
 
 div#siteHeader #logo a {
-    display: block;
+    display:            block;
 }
 
 div#siteHeader p#headerTitle {
-	position: absolute;
-	top: 58px;
-	left: 330px;
-
-	color: #004F80;
-	font-size: 24px;
+	position:           absolute;
+	top:                58px;
+	left:               330px;
+	color:              #004F80;
+	font-size:          24px;
 }
 
 div#siteHeader form {
