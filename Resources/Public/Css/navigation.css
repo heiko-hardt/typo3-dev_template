@@ -55,7 +55,7 @@ span.aural {
 ################################################################################################################## */
 #navigationBreadcrumb {
     overflow:           hidden;
-    width:              45em;                                   /* zur basis 16: width: 720px; */
+    width:              63.75em;                                /* zur basis 16: width: 1020px; */
     padding:            1em 1.25em 0.5625em 15em;               /* zur basis 16: padding: 16px 0 9px 240px; */
     background:         #ffffff;
 }
@@ -63,7 +63,7 @@ span.aural {
 #navigationBreadcrumb ul {
     float:              left;
     padding:            0.18em 0 0 0;
-    width:              36.9375em;
+    /* width:           36.9375em; */
 }
 
 #navigationBreadcrumb li {
