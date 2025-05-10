@@ -8,16 +8,12 @@ default:
                 - HeikoHardt\DevTemplate\Tests\Acceptance\Context\TYPO3Context
             environment:
                 setup:
+                    # default: core, backend, frontend, extbase, fluid
                     coreExtensionsToLoad:
-                        - core
-                        - recordlist
-                        - extbase
-                        - fluid
-                        - frontend
-                        - backend
                         - belog
-                        - install
                         - fluid_styled_content
+                        - install
+                        - recordlist
                         - tstemplate
                     testExtensionsToLoad:
                         - dev_template

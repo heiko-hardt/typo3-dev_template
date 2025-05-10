@@ -8,7 +8,7 @@
 		}
 	],
 	"type": "typo3-cms-extension",
-	"version": "1.0.2",
+	"version": "2.0.0",
 	"license": "GPL-2.0-or-later",
 	"repositories": [
 		{
@@ -18,26 +18,29 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": "^8.7 || ^9.5 || ^10.4 || ^11.5 || ^12.4 || ^13.4"
+		"typo3/cms-core": "^8.7 || ^9.5 || ^10.4 || ^11.5 || ^12.4"
 	},
 	"require-dev": {
-		"typo3/cms-belog": "^13.4",
-		"typo3/cms-fluid-styled-content": "^13.4",
-		"typo3/cms-install": "^13.4",
-		"typo3/cms-tstemplate": "^13.4",
-		"typo3/testing-framework": "^9.2",
-		"typo3/coding-standards": "^0.8",
+		"typo3/cms-core": "^12.4",
+		"typo3/cms-fluid-styled-content": "*",
+		"typo3/cms-install": "*",
+		"typo3/cms-belog": "*",
+		"typo3/cms-tstemplate": "*",
 
-		"behat/behat": "^3.19",
+		"typo3/coding-standards": "^0.8",
+		"typo3/testing-framework": "^8.2",
+		
+		"behat/behat": "^3.15",
+		"behat/gherkin": "~4.12.0",
 		"behat/mink": "^1.12",
 		"friends-of-behat/mink-extension": "^2.x-dev",
 		"mink/webdriver-classic-driver": "^1.1",
 		"heikohardt/behat-typo3-extension": "^8.0",
 
-		"friendsofphp/php-cs-fixer": "^3.75",
-		"helmich/typo3-typoscript-lint": "^3.2",
+		"helmich/typo3-typoscript-lint": "^3.3",
 		"phpmd/phpmd": "^2.15",
-		"squizlabs/php_codesniffer": "^3.12"
+		"squizlabs/php_codesniffer": "^3.7",
+		"rector/rector": "^2.0"
 	},
 
 	"autoload": {
@@ -96,6 +99,7 @@
 	},
 	"extra": {
 		"typo3/cms": {
+			"app-dir": ".run",
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
 			"extension-key": "dev_template",
 			"web-dir": ".run/public"
