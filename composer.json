@@ -8,7 +8,7 @@
 		}
 	],
 	"type": "typo3-cms-extension",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"license": "GPL-2.0-or-later",
 	"repositories": [
 		{
@@ -18,20 +18,19 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": "^8.7 || ^9.5 || ^10.4 || ^11.5 || ^12.4"
+		"typo3/cms-core": "^13.4"
 	},
 	"require-dev": {
-		"typo3/cms-core": "^12.4",
+		"typo3/cms-core": "^13.4",
 		"typo3/cms-fluid-styled-content": "*",
 		"typo3/cms-install": "*",
 		"typo3/cms-belog": "*",
 		"typo3/cms-tstemplate": "*",
 
 		"typo3/coding-standards": "^0.8",
-		"typo3/testing-framework": "^8.2",
+		"typo3/testing-framework": "^9.2",
 		
 		"behat/behat": "^3.15",
-		"behat/gherkin": "~4.12.0",
 		"behat/mink": "^1.12",
 		"friends-of-behat/mink-extension": "^2.x-dev",
 		"mink/webdriver-classic-driver": "^1.1",
@@ -99,7 +98,6 @@
 	},
 	"extra": {
 		"typo3/cms": {
-			"app-dir": ".run",
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
 			"extension-key": "dev_template",
 			"web-dir": ".run/public"
