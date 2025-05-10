@@ -5,6 +5,7 @@
 		<uid>0001</uid>
 		<pid>0</pid>
 		<title>Root - Default</title>
+        <nav_title>Home</nav_title>
 		<sorting>128</sorting>
         <slug>/</slug>
         <doktype>1</doktype>
