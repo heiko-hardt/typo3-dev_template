@@ -39,7 +39,7 @@ div#siteContainer {
 
 div#siteMeta {
     position:           absolute;
-    top:                0;
+    top:                6px;
     right:              0;
 }
 
@@ -87,7 +87,7 @@ div#siteFooter {
 }
 
 .two-column #content-col-mid {
-    width:              46.25em;               /* basis 16: width:740px;  */
+    width:              63.75em;               /* basis 16: width:1020px;  */
     padding:            0.875em 0 5.9375em 0;  /* basis 16: padding: 14px 0 95px 0; */
     overflow:           hidden;
     float:              left;
