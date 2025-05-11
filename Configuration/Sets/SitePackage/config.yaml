@@ -1,5 +1,5 @@
 name: heikohardt/dev-template
-label: 'TYPO3 Development Template'
+label: "TYPO3 Development Template"
 dependencies:
   - typo3/fluid-styled-content
   - typo3/fluid-styled-content-css

@@ -3,62 +3,84 @@
 ##############
 page = PAGE
 page {
-    typeNum = 0
-    shortcutIcon = EXT:dev_template/Resources/Public/Icons/favicon.ico
+  typeNum = 0
+  shortcutIcon = EXT:dev_template/Resources/Public/Icons/favicon.ico
 
-    10 = PAGEVIEW
-    10 {
-        paths {
-            0 = EXT:dev_template/Resources/Private/PageView/
-            1 = {$page.pageview.paths}
-        }
-        dataProcessing {
-            10 = files
-            10 {
-                references.fieldName = media
-            }
-            20 = menu
-            20 {
-                levels = 2
-                includeSpacer = 1
-                as = mainnavigation
-            }
-            30 = page-content
-        }
+  10 = PAGEVIEW
+  10 {
+    paths {
+      0 = EXT:dev_template/Resources/Private/PageView/
+      1 = {$page.pageview.paths}
     }
-
-    meta {
-        viewport = {$page.meta.viewport}
-        robots = {$page.meta.robots}
-        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
-
-        X-UA-Compatible = {$page.meta.compatible}
-        X-UA-Compatible {
-            attribute = http-equiv
-        }
+    dataProcessing {
+      10 = files
+      10 {
+        references.fieldName = media
+      }
+      20 = menu
+      20 {
+        special = directory
+        special.value = {$config.pids.Meta}
+        as = navigationMeta
+      }
+      30 = menu
+      30 {
+        special = rootline
+        special.range = 0|-1
+        includeNotInMenu = 1
+        as = navigationBreadcrumb
+      }
+      40 = menu
+      40 {
+        entryLevel = 1
+        levels = 2
+        includeSpacer = 1
+        as = navigationPrimary
+      }  
+      50 = page-content
     }
+    variables {
+      headerTitle = TEXT
+      headerTitle.value = {$config.headerTitle}
+    }        
+  }
 
-    includeCSSLibs {
+  meta {
+    viewport = {$page.meta.viewport}
+    robots = {$page.meta.robots}
+    apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
 
+    X-UA-Compatible = {$page.meta.compatible}
+    X-UA-Compatible {
+      attribute = http-equiv
     }
+  }
 
-    includeCSS {
-        dev_template_layout = EXT:dev_template/Resources/Public/Css/layout.css
-    }
+  includeCSSLibs {
 
-    includeJSLibs {
+  }
 
-    }
+  includeCSS {
+    dev_template_reset = EXT:dev_template/Resources/Public/Css/reset.css
+    dev_template_main = EXT:dev_template/Resources/Public/Css/main.css
+    dev_template_header = EXT:dev_template/Resources/Public/Css/header.css
+    dev_template_footer = EXT:dev_template/Resources/Public/Css/footer.css
+    dev_template_navigation = EXT:dev_template/Resources/Public/Css/navigation.css
+  }
 
-    includeJS {
+  includeJSLibs {
 
-    }
+  }
 
-    includeJSFooterlibs {
+  includeJS {
 
-    }
+  }
 
-    includeJSFooter {
-        dev_template_scripts = EXT:dev_template/Resources/Public/JavaScript/main.js
-    }
+  includeJSFooterlibs {
+
+  }
+
+  includeJSFooter {
+    dev_template_scripts = EXT:dev_template/Resources/Public/JavaScript/main.js
+  }
 }
