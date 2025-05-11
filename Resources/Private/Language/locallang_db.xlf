@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2018-05-12UTC15:21:240">
-        <header>
-            <authorName>Heiko Hardt</authorName>
-            <authorEmail>Heiko@Hardt.dev</authorEmail>
-        </header>
-        <body>
-        </body>
-    </file>
+	<file source-language="en" datatype="plaintext" original="messages" date="2025-05-10UTC21:09:380">
+		<header>
+			<authorName>Heiko Hardt</authorName>
+			<authorEmail>Heiko@Hardt.dev</authorEmail>
+		</header>
+		<body>
+		</body>
+	</file>
 </xliff>

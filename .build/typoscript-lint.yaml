@@ -1,16 +1,16 @@
 #
-# https://github.com/martin-helmich/typo3-typoscript-lint
+# homepage: https://github.com/martin-helmich/typo3-typoscript-lint
 #
+# coding guidelines:
+# - https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/CodingGuidelines/CglTypoScript/Index.html#
+# - https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/CodingGuidelines/CglTsConfig.html
+
 paths:
-  # - Configuration/TsConfig/
-  - Configuration/TypoScript/
+  - Configuration/
 
 filePatterns:
-  - "*.ts"
   - "*.tsconfig"
   - "*.typoscript"
-  - "setup.txt"
-  - "constants.txt"
 
 sniffs:
   - class: Indentation
