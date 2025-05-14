@@ -1,4 +1,4 @@
-/.archive/
+/.archive
 /.reports/
 /.run/*
 !/.run/history
