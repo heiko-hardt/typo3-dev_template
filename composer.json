@@ -30,7 +30,7 @@
 
 		"typo3/coding-standards": "^0.8",
 		"typo3/testing-framework": "^9.2",
-		
+
 		"behat/behat": "^3.15",
 		"behat/mink": "^1.12",
 		"friends-of-behat/mink-extension": "^2.x-dev",
@@ -54,9 +54,12 @@
 		}
 	},
 	"scripts": {
-		"qa": [
+		"environment": [
 			"mkdir -p .reports/checkstyle",
-			"mkdir -p Public",
+			"mkdir -p Public"
+		],
+		"qa": [
+			"@environment",
 			"@qa:static-code-analysis",
 			"@qa:test"
 		],
@@ -66,7 +69,7 @@
 			"@qa:sca:phpmd"
 		],
 		"qa:test": [
-			"@qa:test:bdd"
+			"@qa:test:acceptance"
 		],
 		"qa:automatic-code-refactoring": [
 			"@qa:acr:rector",
@@ -83,7 +86,7 @@
 		"qa:sca:phpmd": [
 			"phpmd ./Classes xml cleancode,codesize,controversial,design,naming,unusedcode --reportfile .reports/phpmd.xml --suffixes php --ignore-errors-on-exit --ignore-violations-on-exit"
 		],
-		"qa:test:bdd": [
+		"qa:test:acceptance": [
 			"behat -c Tests/Acceptance/behat.yaml --format pretty"
 		],
 		"qa:acr:rector": [

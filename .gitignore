@@ -1,10 +1,21 @@
+# IDE and OS excludes
+/.idea
+.DS_Store
+
+# Common archive / temporary files
 /.archive
-/.reports/
+/.mount
+
+# Runtime environment
+/.docker/*
+!/.docker/.gitkeep
+/.reports
 /.run/*
-!/.run/history
-/.run/history/*
-!/.run/history/.gitkeep
+!/.run/.gitkeep
 /.vendor/*
 !/.vendor/.gitkeep
 /Public/
 /composer.lock
+
+# Cache files
+**/*.cache
