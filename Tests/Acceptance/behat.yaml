@@ -21,9 +21,6 @@ default:
             args:
               - "--ignore-certificate-errors"
               - "--disable-dev-shm-usage"
-              #- "--disable-gpu"
-              #- "--headless"
               - "--no-sandbox"
               - "--start-maximized"
-              #- "--window-size=1920,1080"
               - "--disable-features=SidePanelPinning"

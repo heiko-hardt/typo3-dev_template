@@ -8,9 +8,12 @@
 		}
 	],
 	"type": "typo3-cms-extension",
-	"version": "3.1.0",
-	"license":["GPL-2.0-or-later"],
-	"keywords": ["TYPO3 CMS"],
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"keywords": [
+		"TYPO3 CMS"
+	],
 	"repositories": [
 		{
 			"type": "path",
@@ -19,30 +22,26 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": "^13.4 || ^14.0"
+		"typo3/cms-core": "^13.4 || ^14.2"
 	},
 	"require-dev": {
-		"typo3/cms-core": "^13.4",
+		"typo3/cms-core": "^14.2",
 		"typo3/cms-fluid-styled-content": "*",
 		"typo3/cms-install": "*",
 		"typo3/cms-belog": "*",
 		"typo3/cms-tstemplate": "*",
-
 		"typo3/coding-standards": "^0.8",
 		"typo3/testing-framework": "^9.2",
-		
 		"behat/behat": "^3.15",
 		"behat/mink": "^1.12",
 		"friends-of-behat/mink-extension": "^2.x-dev",
 		"mink/webdriver-classic-driver": "^1.1",
 		"heikohardt/behat-typo3-extension": "^8.0",
-
 		"helmich/typo3-typoscript-lint": "^3.3",
 		"phpmd/phpmd": "^2.15",
 		"ssch/typo3-rector": "^3.1",
 		"squizlabs/php_codesniffer": "^3.7"
 	},
-
 	"autoload": {
 		"psr-4": {
 			"HeikoHardt\\DevTemplate\\": "Classes/"
@@ -54,19 +53,22 @@
 		}
 	},
 	"scripts": {
-		"qa": [
+		"environment": [
 			"mkdir -p .reports/checkstyle",
-			"mkdir -p Public",
+			"mkdir -p Public"
+		],
+		"qa": [
+			"@environment",
 			"@qa:static-code-analysis",
-			"@qa:tests"
+			"@qa:test"
 		],
 		"qa:static-code-analysis": [
 			"@qa:sca:tslint",
 			"@qa:sca:phpcs",
 			"@qa:sca:phpmd"
 		],
-		"qa:tests": [
-			"@qa:tests:bdd"
+		"qa:test": [
+			"@qa:test:acceptance"
 		],
 		"qa:automatic-code-refactoring": [
 			"@qa:acr:rector",
@@ -83,7 +85,7 @@
 		"qa:sca:phpmd": [
 			"phpmd ./Classes xml cleancode,codesize,controversial,design,naming,unusedcode --reportfile .reports/phpmd.xml --suffixes php --ignore-errors-on-exit --ignore-violations-on-exit"
 		],
-		"qa:tests:bdd": [
+		"qa:test:acceptance": [
 			"behat -c Tests/Acceptance/behat.yaml --format pretty"
 		],
 		"qa:acr:rector": [
@@ -102,6 +104,9 @@
 		}
 	},
 	"extra": {
+		"branch-alias": {
+			"dev-main": "3.2.x-dev"
+		},
 		"typo3/cms": {
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
 			"extension-key": "dev_template",
