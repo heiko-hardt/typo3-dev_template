@@ -5,16 +5,16 @@
 # Common archive / temporary files
 /.archive
 /.mount
+/.local.*
 
 # Runtime environment
-/.docker/*
-!/.docker/.gitkeep
 /.reports
 /.run/*
 !/.run/.gitkeep
 /.vendor/*
 !/.vendor/.gitkeep
-/Public/
+/var
+/Public
 /composer.lock
 
 # Cache files
