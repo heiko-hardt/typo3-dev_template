@@ -15,4 +15,4 @@ url:
 	@echo "          selenium: http://localhost:79${COMPOSE_PROJECT_PORT}/?autoconnect=1&resize=scale&password=secret"
 
 clean:
-	@rm -rf .reports .run/bin .run/public .run/vendor Public composer.lock
+	@rm -rf .reports .run/bin .run/public .run/vendor var Public composer.lock
