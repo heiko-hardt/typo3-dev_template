@@ -1,10 +1,13 @@
-// For format details, see https://aka.ms/vscode-remote/devcontainer.json
+// Reference: https://containers.dev/implementors/json_reference/
+// Guide: https://containers.dev/guide/dockerfile#docker-compose
 {
-	// General devcontainer.json properties
 	// https://containers.dev/implementors/json_reference/#general-properties
-	"name": "Apache-Mod PHP environment",
-	"remoteUser": "developer",
+	"name": "T3Ext: Common development template",
+	"containerEnv": {
+		"SHELL": "/bin/zsh"
+	},
 	"overrideCommand": false,
+	"remoteUser": "developer",
 	"shutdownAction": "stopCompose",
 	"customizations": {
 		"vscode": {
@@ -19,14 +22,15 @@
 			]
 		}
 	},
-
 	// Docker Compose specific properties
 	// https://containers.dev/implementors/json_reference/#compose-specific
 	"dockerComposeFile": "../.docker/compose.yaml",
 	"service": "web",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-
 	// Lifecycle scripts
 	// https://containers.dev/implementors/json_reference/#lifecycle-scripts
-	"postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html"
+	"postCreateCommand": {
+		"www": "sudo rm -rf /var/www/html && sudo chown -R developer:developer /var/www && ln -s /workspaces/${localWorkspaceFolderBasename} /var/www/html",
+		"zsh": "curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh || true"
+	}
 }
