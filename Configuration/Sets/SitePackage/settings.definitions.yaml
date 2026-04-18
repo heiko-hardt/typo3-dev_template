@@ -1,0 +1,35 @@
+categories:
+
+  DevTemplate:
+    label: 'TYPO3 Dev.Template'
+
+  DevTemplate.common:
+    label: 'Common'
+    parent: DevTemplate
+
+  DevTemplate.pids:
+    label: 'PageId'
+    parent: DevTemplate
+
+settings:
+
+  DevTemplate.common.siteTitle:
+    label: 'Site Title'
+    category: DevTemplate.common
+    description: 'The title of the site'
+    type: string
+    default: 'TYPO3 Dev.Sandbox x.x'
+
+  DevTemplate.pids.home:
+      label: 'Home Page'
+      description: 'Root page of the website. Used for internal links and menu generation.'
+      category: DevTemplate.pids
+      type: page
+      default: 0
+
+  DevTemplate.pids.meta:
+      label: 'Meta Navigation'
+      description: 'Sysfolder containing the pages of the meta navigation (e.g. imprint, privacy policy).'
+      category: DevTemplate.pids
+      type: page
+      default: 0

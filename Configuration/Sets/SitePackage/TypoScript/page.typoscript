@@ -20,7 +20,7 @@ page {
       20 = menu
       20 {
         special = directory
-        special.value = {$config.pids.Meta}
+        special.value = {$DevTemplate.pids.meta}
         as = navigationMeta
       }
       30 = menu
@@ -41,7 +41,7 @@ page {
     }
     variables {
       headerTitle = TEXT
-      headerTitle.value = {$config.headerTitle}
+      headerTitle.value = {$DevTemplate.common.siteTitle}
     }        
   }
 
